@@ -1,0 +1,117 @@
+
+
+
+
+/*************
+ * SANITIZER *
+ *************/
+ *, *::before, *::after { box-sizing: border-box; border: none; background-repeat: no-repeat; }
+ html { word-break: break-word; scroll-behavior: smooth; color: #312e2e}
+ body { margin: 0; padding:0; }
+
+
+
+/* Buttons */
+button {
+    background-color: black;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight:bold;
+}
+button:hover, button:active { background-color: #312e2e; cursor: pointer;}
+
+
+
+
+
+:root {
+    --light-gray-color: #525d68;
+}
+
+
+
+
+/* App Container */
+.app-outer-container {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.app-inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+/* App Header */
+.app-header { text-align: center; }
+.app-header h1 { margin: 0 }
+.app-header p {
+    font-size:15px;
+    color: var(--light-gray-color);
+    margin: 5px 0 0 0;
+}
+
+
+/* Start Button */
+#start_button_container {
+    margin: 25px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Player Selection */
+#player_selection_container {
+    text-align: center;
+    font-weight:16px;
+    color: var(--light-gray-color);
+}
+#player_selection_options { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#player_selection_options button { 
+    width: 120px;
+}
+
+
+
+/* Winner Container */
+#winner_container {
+    margin: 25px 0 0 0;
+    text-align: center;
+    font-size:17px;
+    color:green;
+}
+
+
+
+
+/* Matches Container */
+#matches_container {
+    margin-top:15px;
+    width: 100%;
+}
+#matches_container hr { border-top: 1px solid lightslategray }
+#matches_container p {
+    margin: 0;
+}
+#matches_container div {
+    margin: 10px 0 10px 0;
+}
+#matches_container div:last-child {
+
+}

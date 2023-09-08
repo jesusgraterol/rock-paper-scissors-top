@@ -9,9 +9,41 @@
     <link rel="stylesheet" href="./app.css">
 
     <!-- Script -->
-    <script type="module" src="app.js" defer></script>
+    <script type="module" src="./app.js" defer></script>
 </head>
 <body>
-    <p>@TODO</p>
+    <!-- App Container -->
+    <div class="app-outer-container">
+        <div>
+            <div class="app-inner-container">
+                <div>
+                <!-- Header -->
+                <div class="app-header">
+                    <h1>Rock Paper Scissors</h1>
+                    <p id="instructions">Defeat the computer by earning 5 points first</p>
+                    <p id="score"></p>
+                </div>
+    
+                <!-- Start Button -->
+                <div id="start_button_container"><button id="start_button">START</button></div>
+    
+                <!-- Winner Container -->
+                <div id="winner_container"></div>
+    
+                <!-- Player Selection -->
+                <div id="player_selection_container">
+                    <p>Choose your weapon</p>
+                    <div id="player_selection_options">
+                        <button>ROCK</button>
+                        <button>PAPER</button>
+                        <button>SCISSORS</button>
+                    </div>
+                </div>
+    
+                <!-- Matches -->
+                <div id="matches_container"></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
